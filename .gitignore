@@ -1,0 +1,52 @@
+# Environment Variables
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Streamlit
+.streamlit/
+
+# IDE Files
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build Files
+build/
+dist/
+*.egg-info/
+
+# Local Testing Files
+test.py
+debug.py
+
+# Secrets
+secrets.json
+credentials.json
+
+# Uploaded Files
+uploads/
+
+# Generated Assets
+generated/

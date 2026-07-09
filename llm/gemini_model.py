@@ -1,10 +1,15 @@
 
 import os
 
-from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+# use for Local Run
+# from dotenv import load_dotenv
 
-load_dotenv()
+from langchain_google_genai import ChatGoogleGenerativeAI
+import streamlit as st
+
+
+# Use for Local run
+# load_dotenv()  
 
 
 class GeminiModel:
@@ -15,8 +20,13 @@ class GeminiModel:
 
         if cls._instance is None:
 
-            api_key = os.getenv("GOOGLE_API_KEY")
+            # Use for Local Run
+            # api_key = os.getenv("GOOGLE_API_KEY")
 
+            # Use for deployment
+            api_key = st.secrets["GOOGLE_API_KEY"]
+
+            
             if not api_key:
                 raise ValueError(
                     "GOOGLE_API_KEY is not set in .env file"

@@ -172,9 +172,8 @@ if user_input:
 
         import traceback
 
-        print("ERROR:", str(error))
-        print(traceback.format_exc())
-
         st.exception(error)
+
+        st.code(traceback.format_exc())
 
     st.rerun()

@@ -42,6 +42,9 @@ class GeminiModel:
                 temperature=0.7,
             )
 
+            st.write("API Key Loaded:", bool(api_key))
+            st.write("Model:", "gemini-2.5-flash")
+
         return cls._instance
 
 

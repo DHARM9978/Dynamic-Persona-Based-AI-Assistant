@@ -170,10 +170,11 @@ if user_input:
 
     except Exception as error:
 
-        print("ERROR:", str(error))
+        import traceback
 
-        st.error(
-            format_error_message(error)
-        )
+        print("ERROR:", str(error))
+        print(traceback.format_exc())
+
+        st.exception(error)
 
     st.rerun()

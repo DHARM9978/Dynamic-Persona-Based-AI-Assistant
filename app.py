@@ -173,7 +173,8 @@ if user_input:
         import traceback
 
         st.exception(error)
-
         st.code(traceback.format_exc())
 
-    st.rerun()
+        st.stop()
+
+    # st.rerun()

@@ -42,7 +42,7 @@ def get_system_prompt(persona_name: str) -> str:
 # ---------------------------------------------------------------------------
 # Gemini model configuration
 # ---------------------------------------------------------------------------
-GEMINI_MODEL_NAME = "gemini-1.5-flash"  # Change to gemini-1.5-pro etc. if needed
+GEMINI_MODEL_NAME = "gemini-2.5-flash"  # Change to gemini-1.5-pro etc. if needed
 GEMINI_TEMPERATURE = 0.7
 GEMINI_MAX_OUTPUT_TOKENS = 1024
 

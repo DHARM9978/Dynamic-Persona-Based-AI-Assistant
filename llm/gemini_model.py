@@ -24,7 +24,11 @@ class GeminiModel:
             # api_key = os.getenv("GOOGLE_API_KEY")
 
             # Use for deployment
-            api_key = st.secrets["GOOGLE_API_KEY"]
+            try:
+                api_key = st.secrets["GOOGLE_API_KEY"]
+                print("API KEY FOUND")
+            except Exception as e:
+                print("SECRET ERROR:", e)
 
             
             if not api_key:

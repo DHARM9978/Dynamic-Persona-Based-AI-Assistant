@@ -8,7 +8,7 @@ import streamlit as st
 # load_dotenv()
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-1.5-flash",
+    model="gemini-2.5-flash",
     
     # Use for local run
     # google_api_key=os.getenv("GOOGLE_API_KEY")
